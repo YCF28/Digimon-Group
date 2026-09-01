@@ -90,3 +90,53 @@ footer {
     color: var(--text-muted);
     font-size: 0.9em;
 }
+/* Tambahan Style untuk Halaman Detail & Link */
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.clickable {
+    cursor: pointer;
+    border-color: var(--accent-color);
+}
+
+.btn-back {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border: 1px solid var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-back:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.container-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.member-card h2 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
