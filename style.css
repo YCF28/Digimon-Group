@@ -24,7 +24,7 @@ header {
 
 h1 {
     color: var(--accent-color);
-    margin: 0 0 10px 0;
+    margin: 10px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -60,6 +60,9 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 1px solid #334155;
     transition: transform 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .group-card:hover {
@@ -83,36 +86,37 @@ h1 {
     margin-bottom: 5px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    color: var(--text-muted);
-    font-size: 0.9em;
+.card-action {
+    margin-top: 15px;
 }
-/* Tambahan Style untuk Halaman Detail & Link */
 
-.card-link {
+.card-action a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 8px 14px;
+    border-radius: 6px;
     text-decoration: none;
-    color: inherit;
-    display: block;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
 }
 
-.clickable {
-    cursor: pointer;
-    border-color: var(--accent-color);
+.card-action a:hover {
+    opacity: 0.9;
 }
+
+/* Style Halaman Detail (royal-knights.html) */
 
 .btn-back {
     display: inline-block;
     color: var(--accent-color);
     text-decoration: none;
-    margin-bottom: 15px;
     font-weight: bold;
     border: 1px solid var(--accent-color);
-    padding: 8px 16px;
+    padding: 6px 14px;
     border-radius: 20px;
-    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
 }
 
 .btn-back:hover {
@@ -139,4 +143,12 @@ footer {
 .member-card h2 {
     margin-top: 0;
     color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.9em;
 }
