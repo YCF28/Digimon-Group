@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => {
             const cardText = card.textContent.toLowerCase();
             if (cardText.includes(query)) {
-                card.style.display = 'block';
+                card.style.display = 'flex';
             } else {
                 card.style.display = 'none';
             }
